@@ -1,12 +1,13 @@
 # Climate Change Analysis: India
 
-This repository contains a comprehensive machine learning pipeline for analyzing and predicting climate change impacts in India, with a focus on Air Quality Index (AQI) and Extreme Weather Events. The project is designed for data science analysis and seamless Power BI visualization.
+This repository contains a comprehensive machine learning pipeline for analyzing and predicting climate change impacts in India, focusing on Air Quality Index (AQI) and Extreme Weather Events. The project is designed for data science analysis and seamless Power BI visualization.
 
 ---
 
 ## 🌏 Project Motivation & Objective
 
-Climate change is leading to more frequent extreme weather events and deteriorating air quality, especially in developing countries like India.  
+Climate change is leading to more frequent extreme weather events and deteriorating air quality, especially in developing countries like India.
+
 **Objectives:**
 - Predict AQI and extreme weather events for Indian cities using machine learning.
 - Provide actionable insights and visualizations for policymakers, researchers, and the public.
@@ -34,7 +35,11 @@ india-climate-ml-pbi/
 ├── event_label_encoder.pkl              # Saved encoder for event labels
 ├── predictions_for_powerbi.csv          # Output for Power BI
 ├── requirements.txt                     # Python dependencies
-└── README.md
+├── README.md                            # Project documentation
+│
+PowerBI Dashboards/
+│   ├── Dashboard - 1.pbix               # Power BI Dashboard 1
+│   └── Dashboard - 2.pbix               # Power BI Dashboard 2
 ```
 
 ---
@@ -50,7 +55,7 @@ india-climate-ml-pbi/
 | Summary statistics and insights                    | ✔️     | Printed MAE, accuracy, confusion matrix, feature importances             |
 | Identifying patterns, trends, and anomalies        | ✔️     | Used model evaluation, feature importance, Power BI-ready output         |
 | Handling outliers and data transformations         | ✔️     | Used robust models, consistent data transformations                      |
-| Initial visual representation of key findings      | ✔️     | Exported CSV for Power BI, DataFrame prints, sample tables               |
+| Initial visual representation of key findings      | ✔️     | Exported CSV for Power BI, DataFrame prints, sample tables, dashboards   |
 
 ---
 
@@ -65,6 +70,9 @@ india-climate-ml-pbi/
 
 ### 3. **Export for Power BI**
 - `src/export_for_powerbi.py`: Generates `predictions_for_powerbi.csv` with actual and predicted AQI and events for visualization.
+
+### 4. **Power BI Dashboards**
+- `PowerBI Dashboards/Dashboard - 1.pbix` and `Dashboard - 2.pbix`: Interactive dashboards for visualizing predictions and insights.
 
 ---
 
@@ -102,6 +110,9 @@ india-climate-ml-pbi/
     python india-climate-ml-pbi/src/export_for_powerbi.py
     ```
 
+5. **Open Power BI Dashboards**
+    - Open `.pbix` files in the `PowerBI Dashboards` folder using Power BI Desktop.
+
 ---
 
 ## 📦 Output
@@ -116,6 +127,9 @@ india-climate-ml-pbi/
   - Predicted_Event
 
   This file is ready for import into Power BI for visualization and further analysis.
+
+- **Power BI Dashboards**  
+  - Visualize trends, patterns, and predictions interactively.
 
 ---
 
